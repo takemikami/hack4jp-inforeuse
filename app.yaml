@@ -1,0 +1,14 @@
+application: hack4jp-inforeuse
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /doc
+  static_dir: doc
+
+- url: /csv
+  static_dir: csv
+
+- url: .*
+  script: main.py
